@@ -71,7 +71,7 @@ public class BSRewardTypeShopPage extends BSRewardType {
                 }
 
                 try {
-                    int page = Math.max(0, Math.min(Integer.valueOf(reward), shopholder.getHighestPage()));
+                    int page = Math.max(0, Math.min(Integer.parseInt(reward), shopholder.getDisplayHighestPage()));
                     return page - 1;
 
                 } catch (NumberFormatException e) {
